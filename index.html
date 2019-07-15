@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Minimalist Weather</title>
+    <script src="https://kit.fontawesome.com/53a0ee37bf.js"></script>
+
+   <meta name="viewport" content="initial-scale=1">
+</head>
+
+<body>
+    <div id="search-bar-btn">
+        <input id="search-bar" type="text" name="" placeholder="Search city" onfocus="this.placeholder=''" onblur="this.placeholder='Search city'">
+        <button id="search-btn" onclick="actSearch()"><i class="fas fa-search fa-2x fa-cog"></i></button>
+    </div>
+    <div id="main">
+        <h1 id="city"></h1>
+        <h1 id="temp"></h1>
+        <h1 id="weather"></h1>
+   </div>
+   <p id="myName">Created by Valinslav</p>
+   <a id="site" href="https://www.pexels.com/photo/aerial-architecture-blue-sky-buildings-466685/"><p id="creator">Photo by Lukas Kloeppel from Pexels</p></a></br>
+   <p id="weatherAPI">Weather provided by OpenWeather API</p>
+   
+    <div id="tempTypes"><div id="forLP"><button id="cButton"type="button" onclick="toMetric()">C</button></br><span id="leftP">.</span></div> <div id="forRP"><button id="fButton" type="button" onclick="toImperial()">F</button></br><span id="rightP">.</span></div></div>
+    <p id="Logo">Minimalist<br> Weather</p>    
+   
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="code.js"></script>
+</html>
