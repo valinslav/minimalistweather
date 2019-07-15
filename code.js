@@ -249,7 +249,3 @@ function getTime(seconds){
         return "night";
     }    
 }
-window.onbeforeunload = function() {
-    city = null;
-    loadCount = 0;
-}
