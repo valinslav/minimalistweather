@@ -184,8 +184,22 @@ function callBack(data) {
 }
 
 function jsonFail(){
+    if(localStorage.getItem("cityInSearchBar" === null)){
+        document.getElementById('city').innerHTML = "Welcome to Minimalist Weather!"
+        document.getElementById('temp').innerHTML = "Type in the search bar to get the weather of the city you desire!";
+        document.getElementById('creator').innerHTML = `Photo by ${pic.creator} from ${pic.host}`;
+        document.getElementById('site').href = pictures[1].website;
+        document.getElementsByTagName('body')[0].style = `background-image: url(${pictures[1].url});
+        background: linear-gradient(
+                         rgba(54, 53, 53, 0.5), 
+                         rgba(49, 48, 48, 0.5)),
+                         url(${pictures[1].url});
+        background-size: 1920px 1080px;`; 
+    }
+    else {
     document.getElementById('city').innerHTML = "City not found";
     document.getElementById('temp').innerHTML = "Please search again";
+    }    
 }
 
 function toMetric() {
