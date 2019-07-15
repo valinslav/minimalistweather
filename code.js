@@ -184,7 +184,7 @@ function callBack(data) {
 }
 
 function jsonFail(){
-    if(localStorage.getItem("cityInSearchBar" === null)){
+    if(localStorage.getItem("cityInSearchBar" === undefined)){
         document.getElementById('city').innerHTML = "Welcome to Minimalist Weather!"
         document.getElementById('temp').innerHTML = "Type in the search bar to get the weather of the city you desire!";
         document.getElementById('creator').innerHTML = `Photo by ${pic.creator} from ${pic.host}`;
