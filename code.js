@@ -8,7 +8,7 @@ if(tempType == 'imperial') {
 }
 
 $.getJSON(`https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=c08f28491a3a2bbb6672e149c1e6342e&units=${tempType}`).done(callBack).fail(jsonFail);
-localStorage.clear();
+
 let pictures = [
 {
     type: "Clear",
