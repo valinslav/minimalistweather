@@ -197,8 +197,8 @@ function jsonFail(){
         background-size: 1920px 1080px;`; 
     }
     else {
-    document.getElementById('city').innerHTML = "City not found";
-    document.getElementById('temp').innerHTML = "Please search again";
+        document.getElementById('city').innerHTML = "City not found";
+        document.getElementById('temp').innerHTML = "Please search again";
     }    
 }
 
